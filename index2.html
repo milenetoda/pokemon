@@ -1,0 +1,667 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>PokéChars</title>
+    <style>
+      @font-face {
+        font-family: "Pokemon-GB";
+        src: url("fonts/Pokemon-GB.ttf.woff") format("woff"),
+          url("fonts/Pokemon-GB.ttf.svg#Pokemon-GB") format("svg"),
+          url("fonts/Pokemon-GB.ttf.eot"),
+          url("fonts/Pokemon-GB.eot?#iefix") format("embedded-opentype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      body {
+        background-color: black;
+      }
+
+      #intro img {
+        width: 100%;
+      }
+
+      #personagens img {
+        width: 100%;
+      }
+
+      #index {
+        display: flex;
+        --flex-direction: column;
+        flex-wrap: wrap;
+      }
+
+      #index div {
+        width: 50%;
+      }
+
+      #index a {
+        display: flex;
+        margin: 5px;
+        text-align: center;
+        font-size: 1em;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @media (min-width: 768px) {
+        #app {
+          width: 600px;
+          margin: auto;
+        }
+      }
+
+      #personagens .btn {
+        display: flex;
+        margin: 5px;
+        text-align: center;
+        font-size: 0.9em;
+        height: 35px;
+        align-items: center;
+        justify-content: center;
+        padding: 0 15px;
+      }
+
+      .btn {
+        color: #fff;
+        background-color: #fba418;
+        font-family: "Pokemon-GB", sans-serif;
+        text-decoration: none;
+      }
+
+      .personagem_btns {
+        display: flex;
+        justify-content: center;
+      }
+
+      #personagens a {
+        display: block;
+      }
+
+      #popup.hidden {
+        display: none;
+      }
+      #popup {
+        background-color: rebeccapurple;
+        color: white;
+        font-family: "Pokemon-GB", sans-serif;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 300px;
+        left: 50%;
+        margin-left: -85px;
+        width: 170px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <div id="intro">
+        <img
+          src="https://1.bp.blogspot.com/-KYQPPwAU3zA/XyO4tEX1suI/AAAAAAABBlw/26m4FJ_hQgwFLLgLsBZOF2o5v3morFnBQCNcBGAsYHQ/s1200/apresentacao_card.png"
+        />
+      </div>
+      <a name="topo"></a>
+      <div id="index">
+        <div><a href="#ash" class="btn">Ash</a></div>
+        <div><a href="#brock" class="btn">Brock</a></div>
+        <div><a href="#carvalho" class="btn">Prof Carvalho</a></div>
+        <div><a href="#clemont" class="btn">Clemont</a></div>
+        <div><a href="#cynthia" class="btn">Cynthia</a></div>
+        <div><a href="#dawn" class="btn">Dawn</a></div>
+        <div><a href="#elite4" class="btn">Elite 4</a></div>
+        <div><a href="#gary" class="btn">Gary</a></div>
+        <div><a href="#giovanni" class="btn">Giovanni</a></div>
+        <div><a href="#jenny" class="btn">Jenny</a></div>
+        <div><a href="#jessiejames" class="btn">Jessie &amp; James</a></div>
+        <div><a href="#joy" class="btn">Enf. Joy</a></div>
+        <div><a href="#lance" class="btn">Mestre Lance</a></div>
+        <div><a href="#may" class="btn">May</a></div>
+        <div><a href="#misty" class="btn">Misty</a></div>
+        <div><a href="#paul" class="btn">Paul</a></div>
+        <div><a href="#ritchie" class="btn">Ritchie</a></div>
+        <div><a href="#serena" class="btn">Serena</a></div>
+        <div><a href="#steven" class="btn">Steven</a></div>
+        <div><a href="#tobias" class="btn">Tobias</a></div>
+        <div><a href="#wally" class="btn">Wally</a></div>
+      </div>
+      <div id="popup" class="hidden">Copiado!</div>
+      <div id="personagens">
+        <div class="personagem">
+          <a name="ash"
+            ><img
+              src="https://1.bp.blogspot.com/-xJNNtC3cmWk/XyO4tbWPemI/AAAAAAABBl0/5_vQW7xHnbgBd-Ar9JgiRhti1HqAXlRsgCNcBGAsYHQ/s1200/ash_card.png"
+          /></a>
+          <div class="personagem_btns">
+            <a href="#" class="btn">
+              EN-US
+            </a>
+            <a href="#" class="btn">
+              PT-BR
+            </a>
+            <a href="#topo" class="btn">
+              TOPO
+            </a>
+          </div>
+        </div>
+        <div class="personagem">
+          <a name="brock"
+            ><img
+              src="https://1.bp.blogspot.com/-l9z4S9WElNs/XyO4tQHS3zI/AAAAAAABBl4/Dp_yFdBt7mUIcTbZ_XSKhQdhyPxSCMyYgCNcBGAsYHQ/s1200/brock_card.png"
+          /></a>
+          <div class="personagem_btns">
+            <a href="#" class="btn">
+              EN-US
+            </a>
+            <a href="#" class="btn">
+              PT-BR
+            </a>
+            <a href="#topo" class="btn">
+              TOPO
+            </a>
+          </div>
+        </div>
+        <div class="personagem">
+          <a name="carvalho"
+            ><img
+              src="https://1.bp.blogspot.com/-SdR4kWzaJAA/XyO4tzugs_I/AAAAAAABBl8/xuOeD6S9rSUSP6R4BIQVAPD868fixM4_wCNcBGAsYHQ/s1200/carvalho_card.png"
+          /></a>
+          <div class="personagem_btns">
+            <a href="#" class="btn">
+              EN-US
+            </a>
+            <a href="#" class="btn">
+              PT-BR
+            </a>
+            <a href="#topo" class="btn">
+              TOPO
+            </a>
+          </div>
+        </div>
+        <div class="personagem">
+          <a name="clemont"
+            ><img
+              src="https://1.bp.blogspot.com/-hm8yDKrwlKg/XyO4uL0asII/AAAAAAABBmA/EgVDcyKQuZUtveZoGJL8FO4i5ST3FpI4ACNcBGAsYHQ/s1200/clemont_card.png"
+          /></a>
+          <div class="personagem_btns">
+            <a href="#" class="btn">
+              EN-US
+            </a>
+            <a href="#" class="btn">
+              PT-BR
+            </a>
+            <a href="#topo" class="btn">
+              TOPO
+            </a>
+          </div>
+        </div>
+        <div class="personagem">
+          <a name="cynthia"
+            ><img
+              src="https://1.bp.blogspot.com/-rUBoukM6Xfw/XyO4uKvnExI/AAAAAAABBmE/K53_XlTIWG4STNeiZrYGAJ7Kg1Dz9yMfwCNcBGAsYHQ/s1200/cynthia_card.png"
+          /></a>
+          <div class="personagem_btns">
+            <a href="#" class="btn">
+              EN-US
+            </a>
+            <a href="#" class="btn">
+              PT-BR
+            </a>
+            <a href="#topo" class="btn">
+              TOPO
+            </a>
+          </div>
+        </div>
+        <div class="personagem">
+          <a name="dawn"
+            ><img
+              src="https://1.bp.blogspot.com/-DtPhTxungN8/XyO4u-0AcRI/AAAAAAABBmI/bOMQXqo-Blskqt9ESz1UEg_OHglIpp4dgCNcBGAsYHQ/s1200/dawn_card.png"
+          /></a>
+          <div class="personagem_btns">
+            <a href="#" class="btn">
+              EN-US
+            </a>
+            <a href="#" class="btn">
+              PT-BR
+            </a>
+            <a href="#topo" class="btn">
+              TOPO
+            </a>
+          </div>
+        </div>
+        <div class="personagem">
+          <a name="elite4"
+            ><img
+              src="https://1.bp.blogspot.com/-kJdnpWf5pw8/XyO4u_noqaI/AAAAAAABBmM/yhAta3uwlhcKqbjNzWYg4TdVXSNolCf_ACNcBGAsYHQ/s1200/elite4_card.png"
+          /></a>
+          <div class="personagem_btns">
+            <a href="#" class="btn">
+              EN-US
+            </a>
+            <a href="#" class="btn">
+              PT-BR
+            </a>
+            <a href="#topo" class="btn">
+              TOPO
+            </a>
+          </div>
+        </div>
+        <div class="personagem">
+          <a name="gary"
+            ><img
+              src="https://1.bp.blogspot.com/-kK8cUpQXo_g/XyO4vLfnhDI/AAAAAAABBmQ/afUr5u1r7bgc9qsr9gH5Sy8KFrksPcgbACNcBGAsYHQ/s1200/gary_card.png"
+          /></a>
+          <div class="personagem_btns">
+            <a href="#" class="btn">
+              EN-US
+            </a>
+            <a href="#" class="btn">
+              PT-BR
+            </a>
+            <a href="#topo" class="btn">
+              TOPO
+            </a>
+          </div>
+        </div>
+        <div class="personagem">
+          <a name="giovanni"
+            ><img
+              src="https://1.bp.blogspot.com/-j4ucTAByhOs/XyO4vskPtUI/AAAAAAABBmU/BbfPC_VlwO4KpfUH5A8x25VRaoTq12tugCNcBGAsYHQ/s1200/giovanni_card.png"
+          /></a>
+          <div class="personagem_btns">
+            <a href="#" class="btn">
+              EN-US
+            </a>
+            <a href="#" class="btn">
+              PT-BR
+            </a>
+            <a href="#topo" class="btn">
+              TOPO
+            </a>
+          </div>
+        </div>
+        <div class="personagem">
+          <a name="jenny"
+            ><img
+              src="https://1.bp.blogspot.com/-n1gGJQYCNHQ/XyO4vhEp2tI/AAAAAAABBmY/E5fDeIzpZOQDQARKFZQINPDJ4Pe-v-QLgCNcBGAsYHQ/s1200/jenny_card.png"
+          /></a>
+          <div class="personagem_btns">
+            <a href="#" class="btn">
+              EN-US
+            </a>
+            <a href="#" class="btn">
+              PT-BR
+            </a>
+            <a href="#topo" class="btn">
+              TOPO
+            </a>
+          </div>
+        </div>
+        <div class="personagem">
+          <a name="jessiejames"
+            ><img
+              src="https://1.bp.blogspot.com/-XTxRZGiaF9A/XyO4vz7uhCI/AAAAAAABBmc/wWPwuMNv4ZgvRNe5C6ZImPit1tANE9s9QCNcBGAsYHQ/s1200/jessiejames_card.png"
+          /></a>
+          <div class="personagem_btns">
+            <a href="#" class="btn">
+              EN-US
+            </a>
+            <a href="#" class="btn">
+              PT-BR
+            </a>
+            <a href="#topo" class="btn">
+              TOPO
+            </a>
+          </div>
+        </div>
+        <div class="personagem">
+          <a name="joy"
+            ><img
+              src="https://1.bp.blogspot.com/-2ipE3sEM7-w/XyO4wThU1_I/AAAAAAABBmk/zeQJVmQlM3Eudjbw0MKiERe1M-xeCuEYwCNcBGAsYHQ/s1200/joy_card.png"
+          /></a>
+          <div class="personagem_btns">
+            <a href="#" class="btn">
+              EN-US
+            </a>
+            <a href="#" class="btn">
+              PT-BR
+            </a>
+            <a href="#topo" class="btn">
+              TOPO
+            </a>
+          </div>
+        </div>
+        <div class="personagem">
+          <a name="lance"
+            ><img
+              src="https://1.bp.blogspot.com/-knzsaK3-nQU/XyO4wZDRNLI/AAAAAAABBmg/-UystJ-aMokCMo4MnjQW9ZEdu5LwpnN9ACNcBGAsYHQ/s1200/lance_card.png"
+          /></a>
+          <div class="personagem_btns">
+            <a href="#" class="btn">
+              EN-US
+            </a>
+            <a href="#" class="btn">
+              PT-BR
+            </a>
+            <a href="#topo" class="btn">
+              TOPO
+            </a>
+          </div>
+        </div>
+        <div class="personagem">
+          <a name="may"
+            ><img
+              src="https://1.bp.blogspot.com/-MnEBWXd1AdE/XyO4wlliaDI/AAAAAAABBmo/0mT0gkbbQkAiPTR170w-4UqWqJ4kyfH2gCNcBGAsYHQ/s1200/may_card.png"
+          /></a>
+          <div class="personagem_btns">
+            <a href="#" class="btn">
+              EN-US
+            </a>
+            <a href="#" class="btn">
+              PT-BR
+            </a>
+            <a href="#topo" class="btn">
+              TOPO
+            </a>
+          </div>
+        </div>
+        <div class="personagem">
+          <a name="misty"
+            ><img
+              src="https://1.bp.blogspot.com/-i52iy6TTl4A/XyO4xBBXkVI/AAAAAAABBms/2BlYudlPdUMRssktnMmBahtgMdQD_mkuACNcBGAsYHQ/s1200/misty_card.png"
+          /></a>
+          <div class="personagem_btns">
+            <a href="#" class="btn">
+              EN-US
+            </a>
+            <a href="#" class="btn">
+              PT-BR
+            </a>
+            <a href="#topo" class="btn">
+              TOPO
+            </a>
+          </div>
+        </div>
+        <div class="personagem">
+          <a name="paul"
+            ><img
+              src="https://1.bp.blogspot.com/-rzVtjEeuNE8/XyO4xHUHbeI/AAAAAAABBmw/80_MsVZki9kpftAoqQ-B8UZqRzvP9dLsgCNcBGAsYHQ/s1200/paul_card.png"
+          /></a>
+          <div class="personagem_btns">
+            <a href="#" class="btn">
+              EN-US
+            </a>
+            <a href="#" class="btn">
+              PT-BR
+            </a>
+            <a href="#topo" class="btn">
+              TOPO
+            </a>
+          </div>
+        </div>
+        <div class="personagem">
+          <a name="ritchie"
+            ><img
+              src="https://1.bp.blogspot.com/-KdONaRoBSIg/XyO4xfMn86I/AAAAAAABBm0/YxduUurL8KMzt8vdeVyUazrtmBR4zZmKQCNcBGAsYHQ/s1200/ritchie_card.png"
+          /></a>
+          <div class="personagem_btns">
+            <a href="#" class="btn">
+              EN-US
+            </a>
+            <a href="#" class="btn">
+              PT-BR
+            </a>
+            <a href="#topo" class="btn">
+              TOPO
+            </a>
+          </div>
+        </div>
+        <div class="personagem">
+          <a name="serena"
+            ><img
+              src="https://1.bp.blogspot.com/-5TSLFqbmBig/XyO4x-e7SqI/AAAAAAABBm4/NZg9pDcdgP4u6A_CfyaTimMyGKbgNMhPACNcBGAsYHQ/s1200/serena_card.png"
+          /></a>
+          <div class="personagem_btns">
+            <a href="#" class="btn">
+              EN-US
+            </a>
+            <a href="#" class="btn">
+              PT-BR
+            </a>
+            <a href="#topo" class="btn">
+              TOPO
+            </a>
+          </div>
+        </div>
+        <div class="personagem">
+          <a name="steven"
+            ><img
+              src="https://1.bp.blogspot.com/-10oHemDSbik/XyO4yPjC8XI/AAAAAAABBm8/z9k1PNnxZLAF8uFVxAZsqSLgIoG-zzjOwCNcBGAsYHQ/s1200/steven_card.png"
+          /></a>
+          <div class="personagem_btns">
+            <a href="#" class="btn">
+              EN-US
+            </a>
+            <a href="#" class="btn">
+              PT-BR
+            </a>
+            <a href="#topo" class="btn">
+              TOPO
+            </a>
+          </div>
+        </div>
+        <div class="personagem">
+          <a name="tobias"
+            ><img
+              src="https://1.bp.blogspot.com/-fJhfNSECAi4/XyO4yBGoCzI/AAAAAAABBnA/46NEPdm0Oy4nROR69y7z3gN3DD04wOeaACNcBGAsYHQ/s1200/tobias_card.png"
+          /></a>
+          <div class="personagem_btns">
+            <a href="#" class="btn">
+              EN-US
+            </a>
+            <a href="#" class="btn">
+              PT-BR
+            </a>
+            <a href="#topo" class="btn">
+              TOPO
+            </a>
+          </div>
+        </div>
+        <div class="personagem">
+          <a name="wally"
+            ><img
+              src="https://1.bp.blogspot.com/-UN4l9n_vAtk/XyO4ypXWlrI/AAAAAAABBnE/X4_2eNapTfAaahrAwAG228EQ0FZmFiQBgCNcBGAsYHQ/s1200/wally_card.png"
+          /></a>
+          <div class="personagem_btns">
+            <a href="#" class="btn">
+              EN-US
+            </a>
+            <a href="#" class="btn">
+              PT-BR
+            </a>
+            <a href="#topo" class="btn">
+              TOPO
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script></script>
+    <script>
+      const personagens = document.getElementById("personagens");
+      const index = document.getElementById("index");
+
+      const map = {
+        ash: {
+          name: "Ash",
+          en_filter:
+            "cp-1500&25;+dragonite;+gastly;+riolu;83;+Bulbasaur;+Charmander;+krabby;+grimer;128;+snorlax;214;+chikorita;+Quilava;+Totodile;+Hoothoot;+Phanpy;+Taillow;+Treecko;+Corphish;324;+Snorunt;+Starly;+Grotle;+Chimchar;+Buizel;+Gliscor;+Gible;+Pidove;+Oshawott;+Tepig;+Snivy;+Scraggy;+Sewaddle;+Tympole;+Boldore;+Sandile;+Fletchling;701;+noibat;+rowlet;+Rockruff;+Litten;+Meltan;122;439;+Squirtle;+Mankey;+Caterpie;+Pidgey;131;+Greninja;+Goomy;+Poipole;+Rattata;+Aipom;+Beedrill;+Larvitar;479;+Fearow;+Oddish;+Slowpoke;",
+          pt_filter:
+            "pc-1500&25;+dragonite;+gastly;+riolu;83;+Bulbasaur;+Charmander;+krabby;+grimer;128;+snorlax;214;+chikorita;+Quilava;+Totodile;+Hoothoot;+Phanpy;+Taillow;+Treecko;+Corphish;324;+Snorunt;+Starly;+Grotle;+Chimchar;+Buizel;+Gliscor;+Gible;+Pidove;+Oshawott;+Tepig;+Snivy;+Scraggy;+Sewaddle;+Tympole;+Boldore;+Sandile;+Fletchling;701;+noibat;+rowlet;+Rockruff;+Litten;+Meltan;122;439;+Squirtle;+Mankey;+Caterpie;+Pidgey;131;+Greninja;+Goomy;+Poipole;+Rattata;+Aipom;+Beedrill;+Larvitar;479;+Fearow;+Oddish;+Slowpoke;",
+        },
+        brock: {
+          name: "Brock",
+          en_filter:
+            "cp-1500&+Geodude;+Golbat;+Ninetales;+Steelix;+Lotad;+Pineco;+Sudowoodo;+Toxicroak;",
+          pt_filter:
+            "pc-1500&+Geodude;+Golbat;+Ninetales;+Steelix;+Lotad;+Pineco;+Sudowoodo;+Toxicroak;",
+        },
+
+        carvalho: {
+          name: "Prof Carvalho",
+          en_filter: "cp-1500&Kanto;",
+          pt_filter: "pc-1500&Kanto;",
+        },
+        clemont: {
+          name: "Clemont",
+          en_filter:
+            "cp-1500&462;618;+Ampharos;+Graveler;+Magneton;+Lanturn;electric;",
+          pt_filter:
+            "pc-1500&462;618;+Ampharos;+Graveler;+Magneton;+Lanturn;eletrico;",
+        },
+        cynthia: {
+          name: "Cynthia",
+          en_filter:
+            "cp-1500&442;+Lucario;+Roselia;+Milotic;+Garchomp;+Gastrodon;+Togekiss;+Braviary;+Glaceon;+Empoleon;+Toxicroak;",
+          pt_filter:
+            "pc-1500&442;+Lucario;+Roselia;+Milotic;+Garchomp;+Gastrodon;+Togekiss;+Braviary;+Glaceon;+Empoleon;+Toxicroak;",
+        },
+        dawn: {
+          name: "Dawn",
+          en_filter:
+            "cp-1500&+Quilava;417;+Mamoswine;+Buneary;+Piplup;+Togekiss;+Aipom;+Buizel;+Alakazam;",
+          pt_filter:
+            "pc-1500&+Quilava;417;+Mamoswine;+Buneary;+Piplup;+Togekiss;+Aipom;+Buizel;+Alakazam;",
+        },
+        elite4: {
+          name: "Elite 4",
+          en_filter: "cp-1500&Dark;Flying;Bug;Grass;Ice;Psychic;",
+          pt_filter: "pc-1500&Dark;voador;inseto;grama;gelo;psiquico;",
+        },
+        gary: {
+          name: "Gary",
+          en_filter: "cp-1500&Kanto;Umbreon;",
+          pt_filter: "pc-1500&Kanto;Umbreon;",
+        },
+        giovanni: {
+          name: "Giovanni",
+          en_filter: "cp-1500&+Persian;ground;poison;normal;",
+          pt_filter: "pc-1500&+Persian;terra;venenoso;normal;",
+        },
+        jenny: {
+          name: "Jenny",
+          en_filter:
+            "cp-1500&+Blastoise;+Arcanine;+Skuntank;+Pelipper;+Manectric;+Stoutland;+Haunter;+Ariados;+Jumpluff;+Pidgeot;+Parasect;+Tangela;+Meganium;+Luxray;+Feraligatr;",
+          pt_filter:
+            "pc-1500&+Blastoise;+Arcanine;+Skuntank;+Pelipper;+Manectric;+Stoutland;+Haunter;+Ariados;+Jumpluff;+Pidgeot;+Parasect;+Tangela;+Meganium;+Luxray;+Feraligatr;",
+        },
+        jessiejames: {
+          name: "Jessie & James",
+          en_filter:
+            "cp-1500&+Weezing;122;439;+Arcanine;455;+Persian;358;+Gyarados;+Jumpluff;+Camerupt;+Pidgeot;202;+Arbok;336;+Yanmega;+Lickitung;303;+Dustox;+Cloyster;+Swoobat;",
+          pt_filter:
+            "pc-1500&+Weezing;122;439;+Arcanine;455;+Persian;358;+Gyarados;+Jumpluff;+Camerupt;+Pidgeot;202;+Arbok;336;+Yanmega;+Lickitung;303;+Dustox;+Cloyster;+Swoobat",
+        },
+        joy: {
+          name: "Enf. Joy",
+          en_filter:
+            "cp-1500&+Wigglytuff;+Clefable;+Chansey;531;+Granbull;+Wailord;+Drifblim;379;+Bastiodon;+Umbreon;241;+Lickitung;222;",
+          pt_filter:
+            "pc-1500&+Wigglytuff;+Clefable;+Chansey;531;+Granbull;+Wailord;+Drifblim;379;+Bastiodon;+Umbreon;241;+Lickitung;222;",
+        },
+        lance: {
+          name: "Mestre Lance",
+          en_filter: "cp-1500&dragon;charizard;",
+          pt_filter: "pc-1500&dragao;charizard;",
+        },
+        may: {
+          name: "May",
+          en_filter:
+            "cp-1500&+Munchlax;+Venusaur;+Glaceon;+Blaziken;+Wartortle;+Beautifly;+Skitty;",
+          pt_filter:
+            "pc-1500&+Munchlax;+Venusaur;+Glaceon;+Blaziken;+Wartortle;+Beautifly;+Skitty;",
+        },
+        misty: {
+          name: "Misty",
+          en_filter:
+            "cp-1500&+Azumarill;131;+Golduck;+Blastoise;222;+Gyarados;+Seaking;+Starmie;+Poliwrath;+Slowbro;+Kingdra;+Dewgong;+Dragonair;+Togetic;",
+          pt_filter:
+            "pc-1500&+Azumarill;131;+Golduck;+Blastoise;222;+Gyarados;+Seaking;+Starmie;+Poliwrath;+Slowbro;+Kingdra;+Dewgong;+Dragonair;+Togetic;",
+        },
+        paul: {
+          name: "Paul",
+          en_filter:
+            "cp-1500&+Electivire;+Ninjask;+Aggron;+Gastrodon;+Drapion;+Froslass;+Torterra;+Ursaring;+Honchkrow;+Sneasel;+Gligar;+Magmortar;+Nidoking;+Staravia;Stantler;",
+          pt_filter:
+            "pc-1500&+Electivire;+Ninjask;+Aggron;+Gastrodon;+Drapion;+Froslass;+Torterra;+Ursaring;+Honchkrow;+Sneasel;+Gligar;+Magmortar;+Nidoking;+Staravia;Stantler;",
+        },
+        ritchie: {
+          name: "Ritchie",
+          en_filter:
+            "cp-1500&+Pikachu;+Charizard;+Tyranitar;+Butterfree;+Swellow;+Tentacruel;+Fearow;+Eevee;",
+          pt_filter:
+            "pc-1500&+Pikachu;+Charizard;+Tyranitar;+Butterfree;+Swellow;+Tentacruel;+Fearow;+Eevee;",
+        },
+        serena: {
+          name: "Serena",
+          en_filter:
+            "cp-1500&+Rhyperior;441;250;+Piloswine;+Treecko;+Torchic;+Mudkip;",
+          pt_filter:
+            "pc-1500&+Rhyperior;441;250;+Piloswine;+Treecko;+Torchic;+Mudkip;",
+        },
+        steven: {
+          name: "Steven",
+          en_filter:
+            "cp-1500&227;+Claydol;+Aggron;+Metagross;+Armaldo;+Cradily;+Excadrill;142;+Ninetales;+Treecko;+Torchic;+Mudkip;",
+          pt_filter:
+            "pc-1500&227;+Claydol;+Aggron;+Metagross;+Armaldo;+Cradily;+Excadrill;142;+Ninetales;+Treecko;+Torchic;+Mudkip;",
+        },
+        tobias: {
+          name: "Tobias",
+          en_filter: "cp-1500&legendary;mythical;",
+          pt_filter: "pc-1500&lendario;mitico;",
+        },
+        wally: {
+          name: "Wally",
+          en_filter:
+            "cp-1500&282;475;+Altaria;+Charizard;+Roselia;+Magneton;+Delcatty;+Linoone;+Garchomp;+Azumarill;",
+          pt_filter:
+            "pc-1500&282;475;+Altaria;+Charizard;+Roselia;+Magneton;+Delcatty;+Linoone;+Garchomp;+Azumarill;",
+        },
+      };
+
+      var app = new Vue({
+        el: "#app",
+        data: {
+          map: map,
+        },
+        methods: {
+          copy: function (event, text) {
+            event.preventDefault();
+            navigator.clipboard.writeText(text).then(function () {
+              app.toggle_popup();
+              window.setTimeout(function () {
+                app.toggle_popup();
+              }, 2000);
+            });
+          },
+          toggle_popup: function () {
+            const cl = document.getElementById("popup").classList;
+            cl.toggle("hidden");
+            cl.toggle("animate__animated");
+            cl.toggle("animate__swing");
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
