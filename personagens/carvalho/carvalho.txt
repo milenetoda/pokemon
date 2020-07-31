@@ -1,0 +1,15 @@
+Descrição:
+Prof. Carvalho é um 
+famoso pesquisador 
+de Pokémon. 
+Ele instrui os 
+treinadores novatos 
+de Pallet, guiando-os 
+em sua jornada e dando 
+a eles seus 
+primeiros Pokémon. 
+
+Pokémons permitidos:
+Todos os 
+151 Pokémons de Kanto
+

@@ -1,0 +1,14 @@
+Descrição:
+Misty é especialista em 
+Pokémons de tipo Água 
+e é Líder do Ginásio 
+da Cidade Celeste.
+
+Pokémons permitidos:
+Azumarill, Lapras, 
+Golduck, Blastoise, 
+Corsola, Gyarados,
+Seaking, Starmie, 
+Poliwrath, Slowbro, 
+Kingdra, Dewgong, 
+Dragonair, Togetic.

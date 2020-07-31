@@ -1,0 +1,16 @@
+Descrição:
+Wally é um garoto jovem
+e doente que sonha 
+em treinar Pokémons.
+
+Pokémons permitidos:
+Obrigatório: Gardevoir 
+ou Gallade.
+Resto do time: Altaria, 
+Charizard, Roselia, 
+Magneton, Delcatty, 
+Linoone, Garchomp, 
+Azumarill.
+
+Obs. Permitido o uso
+das pré-evoluções.

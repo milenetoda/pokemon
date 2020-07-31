@@ -1,0 +1,16 @@
+Descrição:
+Steven é um treinador 
+de Pokémon de Metal e 
+campeão da Liga Pokémon 
+da região de Hoenn.
+
+Pokémons permitidos:
+Skarmory, Claydol, 
+Aggron, Metagros, 
+Armaldo, Cradily, 
+Excadrill, Aerodactyl, 
+Alolan Ninetales
+e um inicial de Hoenn.
+
+Obs. Permitido o uso
+das pré-evoluções.

@@ -1,0 +1,15 @@
+Descrição:
+Elite Four é o grupo
+dos quatro Treinadores
+mais poderosos de cada região.
+
+Pokémons permitidos:
+Dark, Voador, Inseto, 
+Planta, Gelo, Psíquico.
+
+Obs. Obrigatório o uso
+de um Pokémon escolhido
+pelos admins como
+"Pokémon Lendário"
+(Não será obrigatoriamente
+lendário)

@@ -1,0 +1,10 @@
+Descrição:
+Lance é o grande Campeão
+da Liga Pokémon.
+É um especialista 
+em Pokémon do tipo dragão.
+
+Pokémons permitidos:
+Tipo Dragão, podendo 
+levar Charizard 
+como exceção.

@@ -1,0 +1,10 @@
+{
+  "name": "pokemon",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/milenetoda/pokemon.git",
+  "license": "MIT",
+  "dependencies": {
+    "local-web-server": "^4.2.1"
+  }
+}
