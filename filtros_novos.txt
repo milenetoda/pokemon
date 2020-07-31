@@ -52,7 +52,7 @@ pc-1500&+Munchlax;+Venusaur;+Glaceon;+Blaziken;+Wartortle;+Beautifly;+Skitty;
 
 Meste Lance:
 cp-1500&dragon;charizard;
-pc-1500&dragao;charizard;
+pc-1500&dragão;charizard;
 
 Misty:
 cp-1500&+Azumarill;131;+Golduck;+Blastoise;222;+Gyarados;+Seaking;+Starmie;+Poliwrath;+Slowbro;+Kingdra;+Dewgong;+Dragonair;+Togetic;
@@ -80,7 +80,7 @@ pc-1500&227;+Claydol;+Aggron;+Metagross;+Armaldo;+Cradily;+Excadrill;142;+Nineta
 
 Tobias:
 cp-1500&legendary;mythical;
-pc-1500&lendario;mitico;
+pc-1500&lendário;mítico;
 
 Wally:
 cp-1500&282;475;+Altaria;+Charizard;+Roselia;+Magneton;+Delcatty;+Linoone;+Garchomp;+Azumarill;
